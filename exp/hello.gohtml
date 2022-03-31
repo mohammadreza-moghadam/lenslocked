@@ -1,0 +1,19 @@
+<h1>Hello {{.Name}}</h1>
+<h3>My Dog's name is {{.Dog}}</h3>
+<p>{{.Age}}</p>
+<p>{{.Float}}</p>
+<p>{{.Names}}</p>
+<p>{{.Profile}}</p>
+
+{{/* Nested Types */}}
+<p>{{.Profile.Email}}</p>
+<p>{{.Profile.Username}}</p>
+
+{{/* loop in template */}}
+{{range .Slice}}
+  {{.}}
+{{end}}
+
+<script>
+    var m = {{.Names}};
+</script>
